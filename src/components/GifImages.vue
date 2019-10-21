@@ -1,11 +1,8 @@
 <template>
-  <div :key=key class="fr w-50 w-25-m w-20-l pa2"> 
-    <a :href=href class="db link dim tc">
-      <img :src=src class="w-100 db outline black-10" />
-      <dl class="mt2 f6 lh-copy">
-        <dt class="clip">Title</dt>
-        <dd title='title' class="ml0 black truncate w-100">{{title}}</dd>
-      </dl>
+  <div class="fl pa2 w-50 w-20-ns"> 
+    <a :href=href class="db aspect-ratio aspect-ratio--1x1 dim">
+      <span v-bind:style="{ backgroundImage: `url(${src})` }" class="bg-center cover aspect-ratio--object">
+      </span>
     </a>
   </div>
 </template>
@@ -18,9 +15,6 @@ export default {
     href: String,
     src: String,
     title: String
-  },
-  methods: {
-    }
   }
-
+}
 </script>

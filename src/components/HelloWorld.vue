@@ -6,7 +6,7 @@
       <a href="https://giphy.com/" target="_blank" rel="noopener"> they come from</a>.
     </p> 
     <SearchGifs @clicked="onChildClick"/>
-    <div v-if="gifs.length" class="cf flex flex-wrap pa2">
+    <div v-if="gifs.length" class="cf pa4">
       <GifImages
         v-for="gif in gifs"
         v-bind:key="gif.id"

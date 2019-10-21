@@ -27,7 +27,7 @@ export default {
       .then(data => {
         this.data.gifs = [...data.data]
       })
-      .then(this.$emit('clicked', this.data)) //eslint-disable-line no-console
+      .then(() => this.$emit('clicked', this.data)) //eslint-disable-line no-console
 
     }
   }
