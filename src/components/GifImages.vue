@@ -11,7 +11,6 @@
 export default {
   name: 'GifImages',
   props: {
-    key: String,
     href: String,
     src: String,
     title: String
